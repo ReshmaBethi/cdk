@@ -8,7 +8,7 @@ function Emp(){
 		this.empno = 10;
 		this.ename="aa"
 		this.salary=1000;
-		
+	
 		this.incr = incr;
 
 		function incr(){
@@ -18,11 +18,34 @@ function Emp(){
 
 
 function test1(){
-	var e= new Emp()
-	//incr()
-	console.log(e);
-	e.incr();
-	console.log(e);
+	Emp.prototype.dept = "Training"	
+	var e1= new Emp()
+	var e2= new Emp()
+	var e3= new Emp()
+	Emp.prototype.dept = "Training"
+	
+	
+	
+	console.log(e1);
+	console.log(e2);
+	console.log(e3);
+	
+	console.log(e1.dept)
+	console.log(e2.dept)
+	console.log(e3.dept)
+	Emp.prototype.dept = "Finance"
+	e1.dept = "AAA"
+
+		console.log(e1);
+	console.log(e2);
+	console.log(e3);
+	
+	
+		console.log(e1.dept)
+		console.log(e2.dept)
+		console.log(e3.dept)
+		
+	
 }
 </script>
 </head>
