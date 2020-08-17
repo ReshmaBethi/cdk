@@ -23,6 +23,25 @@
 		op = event.srcElement.value;
 	}
 	
+	function result()
+	{
+		if (op!=="N"){
+		var ans = (op==="+")? parseInt(no1) +parseInt(no2):parseInt(no1) -parseInt(no2);
+			
+/*		var ans = 0
+		if()
+			{
+				ans = parseInt(no1) +parseInt(no2);
+			}
+		else if(op==="-")
+			{
+			ans = parseInt(no1) -parseInt(no2);
+			}
+	*/
+		document.getElementById("result").innerHTML = ans
+		op="N"
+		}
+	}
 </script>
 </head>
 <body >
@@ -32,8 +51,10 @@
     <input type="button" value="7" /><input type="button" value="8" /><input type="button" value="9" /><br/>
     <input type="button" value="0" /><br/>
   </div>
-    <span onclick="divop(event)"><input type="button" value="+" /><input type="button" value="-" /></span><input type="button" value="=" /><br/>
+    <span onclick="divop(event)"><input type="button" value="+" /><input type="button" value="-" /></span>
     
+    <input type="button" value="="  onclick="result()"/><br/>
+   <div id="result"></div>    
 
 </body>
 </html>
