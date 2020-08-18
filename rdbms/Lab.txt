@@ -24,6 +24,10 @@ Lab 1 - installation + connection
 Lab 2 - connection
     connect to remote oracle installation (SQLClient / TOAD)
         sqlplus admin/MyPassword@//mydb.cyhhds8qhsga.us-east-1.rds.amazonaws.com:1521/mydb
+        sqlplus admin/MyPass@//mydb.cyhhds8qhsga.us-east-1.rds.amazonaws.com:1521/ORCL
+
+sqlplus 'admin@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=mydb.cyhhds8qhsga.us-east-1.rds.amazonaws.com)(PORT=1521))(CONNECT_DATA=(ORCL)'
+
         
 Lab 3 - Live oracle session
     https://livesql.oracle.com/apex/f?p=590:1000
