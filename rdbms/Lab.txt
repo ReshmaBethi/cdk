@@ -20,3 +20,14 @@ Lab 1 - installation + connection
         password - tiger1
       create table dept (deptno varchar(2) );
        select * from dept;
+
+Lab 2 - connection
+    connect to remote oracle installation (SQLClient / TOAD)
+        sqlplus admin/MyPassword@//mydb.cyhhds8qhsga.us-east-1.rds.amazonaws.com:1521/mydb
+        
+Lab 3 - Live oracle session
+    https://livesql.oracle.com/apex/f?p=590:1000
+    
+    
+    
+    
