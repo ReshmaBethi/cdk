@@ -62,4 +62,7 @@ Create table with given rows
 	deptno is IT
 	deptno is IT or FN (IN)
 	
-
+Lab 6 - group by
+	select dept from emp group by dept
+	select dept, count(*) from emp group by dept;
+	select dept,min(salary), max(salary) from emp group by dept;
