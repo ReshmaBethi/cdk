@@ -52,3 +52,14 @@ Table Structure
   
     
     
+Lab 5 - select  ( https://www.oracletutorial.com/oracle-basics/oracle-like/)
+Create table with given rows
+1. show all employee details where
+	name starts with "R"
+	name ends with "li"
+	name has "sh" 
+	salary - <,>,<=,>=, !=, between
+	deptno is IT
+	deptno is IT or FN (IN)
+	
+
